@@ -1,0 +1,76 @@
+.hero {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../img/photo_4.jpg");
+  background-position-y: "center";
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.hero .overlay {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(0deg, #010101 0%, #100202b2 50%, rgba(2, 0, 0, 0.692) 100%);
+}
+.hero h3 {
+  font-size: 4em !important;
+}
+
+.aligner-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+  text-align: center;
+}
+
+.justify-center {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.h-100 {
+  height: 100% !important;
+}
+.paragraph {
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.paragraph::before,
+.paragraph::after {
+  display: inline-block;
+}
+
+.paragraph::before {
+  margin-right: 5px;
+  content: url("../img/icons/paragraph.png");
+}
+
+.paragraph::after {
+  margin-left: 5px;
+  content: url("../img/icons/paragraph_close.png");
+}
+
+.bg-wine {
+  background-color: #ce083a;
+}
+
+.icon-image {
+  width: 50px;
+  margin: 10px;
+}
+
+.avatar-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  box-shadow: 0 0rem 2rem rgba(165, 136, 136, 0.377) !important;
+}
+.white-text {
+  color: #afabab !important;
+}
