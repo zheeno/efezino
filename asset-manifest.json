@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/efezino/static/css/main.286fcb87.chunk.css",
-    "main.js": "/efezino/static/js/main.cf682cde.chunk.js",
-    "main.js.map": "/efezino/static/js/main.cf682cde.chunk.js.map",
+    "main.css": "/efezino/static/css/main.404aa5cb.chunk.css",
+    "main.js": "/efezino/static/js/main.a631d5f4.chunk.js",
+    "main.js.map": "/efezino/static/js/main.a631d5f4.chunk.js.map",
     "runtime-main.js": "/efezino/static/js/runtime-main.b9183603.js",
     "runtime-main.js.map": "/efezino/static/js/runtime-main.b9183603.js.map",
-    "static/js/2.f4dc38dc.chunk.js": "/efezino/static/js/2.f4dc38dc.chunk.js",
-    "static/js/2.f4dc38dc.chunk.js.map": "/efezino/static/js/2.f4dc38dc.chunk.js.map",
+    "static/css/2.ac1ab58b.chunk.css": "/efezino/static/css/2.ac1ab58b.chunk.css",
+    "static/js/2.dadfdc52.chunk.js": "/efezino/static/js/2.dadfdc52.chunk.js",
+    "static/js/2.dadfdc52.chunk.js.map": "/efezino/static/js/2.dadfdc52.chunk.js.map",
     "index.html": "/efezino/index.html",
-    "precache-manifest.c05cceb8c994aea27a90f571febfa570.js": "/efezino/precache-manifest.c05cceb8c994aea27a90f571febfa570.js",
+    "precache-manifest.8d8d7fefe670e41e409084fdf26e1d9c.js": "/efezino/precache-manifest.8d8d7fefe670e41e409084fdf26e1d9c.js",
     "service-worker.js": "/efezino/service-worker.js",
-    "static/css/main.286fcb87.chunk.css.map": "/efezino/static/css/main.286fcb87.chunk.css.map",
-    "static/js/2.f4dc38dc.chunk.js.LICENSE.txt": "/efezino/static/js/2.f4dc38dc.chunk.js.LICENSE.txt",
+    "static/css/2.ac1ab58b.chunk.css.map": "/efezino/static/css/2.ac1ab58b.chunk.css.map",
+    "static/css/main.404aa5cb.chunk.css.map": "/efezino/static/css/main.404aa5cb.chunk.css.map",
+    "static/js/2.dadfdc52.chunk.js.LICENSE.txt": "/efezino/static/js/2.dadfdc52.chunk.js.LICENSE.txt",
     "static/media/angular.png": "/efezino/static/media/angular.330311b4.png",
     "static/media/firebase.png": "/efezino/static/media/firebase.a6c26916.png",
     "static/media/git.png": "/efezino/static/media/git.8fa18eb5.png",
@@ -21,14 +23,18 @@
     "static/media/js.png": "/efezino/static/media/js.86443ae4.png",
     "static/media/laravel.png": "/efezino/static/media/laravel.c6ce0ce4.png",
     "static/media/logo.svg": "/efezino/static/media/logo.5d5d9eef.svg",
+    "static/media/myAvatar_1.png": "/efezino/static/media/myAvatar_1.a9d30c22.png",
+    "static/media/myAvatar_2.png": "/efezino/static/media/myAvatar_2.4129223a.png",
+    "static/media/myAvatar_3.png": "/efezino/static/media/myAvatar_3.9148e459.png",
     "static/media/myAvatar_4.png": "/efezino/static/media/myAvatar_4.8501710c.png",
     "static/media/App.css": "/efezino/static/media/photo_4.00a8f5f4.jpg",
     "static/media/react.png": "/efezino/static/media/react.f297dfcd.png"
   },
   "entrypoints": [
     "static/js/runtime-main.b9183603.js",
-    "static/js/2.f4dc38dc.chunk.js",
-    "static/css/main.286fcb87.chunk.css",
-    "static/js/main.cf682cde.chunk.js"
+    "static/css/2.ac1ab58b.chunk.css",
+    "static/js/2.dadfdc52.chunk.js",
+    "static/css/main.404aa5cb.chunk.css",
+    "static/js/main.a631d5f4.chunk.js"
   ]
 }
