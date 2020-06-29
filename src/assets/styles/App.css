@@ -5,7 +5,6 @@
   background-position-y: "center";
   background-size: cover;
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
 }
 .hero-2 {
   height: 70vh;
@@ -137,5 +136,11 @@ footer {
   footer {
     top: 0px;
     position: relative;
+  }
+  .hero {
+    background-position-y: "center";
+    background-position-x: right;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
