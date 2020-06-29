@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "757f189bdbfce2d93229f5436bdb6ffb",
+    "revision": "85c60f299b8854ee8720884c5635fffa",
     "url": "/efezino/index.html"
   },
   {
-    "revision": "68306746f45e332c2a75",
+    "revision": "09cce534c42daed62339",
     "url": "/efezino/static/css/2.ac1ab58b.chunk.css"
   },
   {
-    "revision": "50c24abff1e546609d4f",
-    "url": "/efezino/static/css/main.404aa5cb.chunk.css"
+    "revision": "601dc6c5f32a6b33bb12",
+    "url": "/efezino/static/css/main.b908ee2d.chunk.css"
   },
   {
-    "revision": "68306746f45e332c2a75",
-    "url": "/efezino/static/js/2.dadfdc52.chunk.js"
+    "revision": "09cce534c42daed62339",
+    "url": "/efezino/static/js/2.d3844477.chunk.js"
   },
   {
     "revision": "5ac48c47bb3912b14c2d8de4f56d5ae8",
-    "url": "/efezino/static/js/2.dadfdc52.chunk.js.LICENSE.txt"
+    "url": "/efezino/static/js/2.d3844477.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "50c24abff1e546609d4f",
-    "url": "/efezino/static/js/main.a631d5f4.chunk.js"
+    "revision": "601dc6c5f32a6b33bb12",
+    "url": "/efezino/static/js/main.9397b4e4.chunk.js"
   },
   {
     "revision": "00057c28ec44d3858e02",
@@ -32,6 +32,22 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/efezino/static/media/angular.330311b4.png"
   },
   {
+    "revision": "e9f093acdfd86c376e277fb002661f43",
+    "url": "/efezino/static/media/circuit-booking.e9f093ac.png"
+  },
+  {
+    "revision": "75e4d6d5a0f6b8f4e4030f9b00511ca7",
+    "url": "/efezino/static/media/css.75e4d6d5.png"
+  },
+  {
+    "revision": "9d07141dd9a4b776147d16a109d78dff",
+    "url": "/efezino/static/media/facebook.9d07141d.png"
+  },
+  {
+    "revision": "7955e8973695d31ebee4f72936ccefe6",
+    "url": "/efezino/static/media/fastklinik.7955e897.png"
+  },
+  {
     "revision": "a6c26916c900bfa596ff3c52dfa11db0",
     "url": "/efezino/static/media/firebase.a6c26916.png"
   },
@@ -40,8 +56,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/efezino/static/media/git.8fa18eb5.png"
   },
   {
+    "revision": "a55135401d749fa78cd317274b3f6fe2",
+    "url": "/efezino/static/media/google-materialdesign.a5513540.png"
+  },
+  {
     "revision": "f06fe0851da93b9e7e63fb066b5b4d2a",
     "url": "/efezino/static/media/html.f06fe085.png"
+  },
+  {
+    "revision": "5c570427ee23f69853d28aec805eee79",
+    "url": "/efezino/static/media/instagram.5c570427.png"
   },
   {
     "revision": "362bba040332a070a055ad11d951449c",
@@ -58,6 +82,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c6ce0ce4d005ecf7619c21d44a928909",
     "url": "/efezino/static/media/laravel.c6ce0ce4.png"
+  },
+  {
+    "revision": "fd0d5546fdbdc85c76c4372a0d51f1bc",
+    "url": "/efezino/static/media/linkedin.fd0d5546.png"
   },
   {
     "revision": "5d5d9eefa31e5e13a6610d9fa7a283bb",
@@ -90,5 +118,21 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f297dfcd8b3e9215ee862f232d5c9d13",
     "url": "/efezino/static/media/react.f297dfcd.png"
+  },
+  {
+    "revision": "ed017f64875c202fc2aa2acd24a2d243",
+    "url": "/efezino/static/media/scorenshare.ed017f64.png"
+  },
+  {
+    "revision": "6e061883fb60ed82777661c0d6c6b7a5",
+    "url": "/efezino/static/media/sniffer.6e061883.png"
+  },
+  {
+    "revision": "0eef5b07aa7749858ed521c60a6a068c",
+    "url": "/efezino/static/media/terminal.0eef5b07.png"
+  },
+  {
+    "revision": "0251d8ee95aa6d1f3400faa3b46b4bcf",
+    "url": "/efezino/static/media/twitter.0251d8ee.png"
   }
 ]);
