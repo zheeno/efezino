@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/efezino/static/css/main.b908ee2d.chunk.css",
+    "main.css": "/efezino/static/css/main.06e0806c.chunk.css",
     "main.js": "/efezino/static/js/main.9397b4e4.chunk.js",
     "main.js.map": "/efezino/static/js/main.9397b4e4.chunk.js.map",
     "runtime-main.js": "/efezino/static/js/runtime-main.b9183603.js",
@@ -9,10 +9,10 @@
     "static/js/2.d3844477.chunk.js": "/efezino/static/js/2.d3844477.chunk.js",
     "static/js/2.d3844477.chunk.js.map": "/efezino/static/js/2.d3844477.chunk.js.map",
     "index.html": "/efezino/index.html",
-    "precache-manifest.b207ef4ed8ec6ca9a9221806096d1485.js": "/efezino/precache-manifest.b207ef4ed8ec6ca9a9221806096d1485.js",
+    "precache-manifest.389d47cff277aa3ef6f194ff64116f0b.js": "/efezino/precache-manifest.389d47cff277aa3ef6f194ff64116f0b.js",
     "service-worker.js": "/efezino/service-worker.js",
     "static/css/2.ac1ab58b.chunk.css.map": "/efezino/static/css/2.ac1ab58b.chunk.css.map",
-    "static/css/main.b908ee2d.chunk.css.map": "/efezino/static/css/main.b908ee2d.chunk.css.map",
+    "static/css/main.06e0806c.chunk.css.map": "/efezino/static/css/main.06e0806c.chunk.css.map",
     "static/js/2.d3844477.chunk.js.LICENSE.txt": "/efezino/static/js/2.d3844477.chunk.js.LICENSE.txt",
     "static/media/angular.png": "/efezino/static/media/angular.330311b4.png",
     "static/media/circuit-booking.png": "/efezino/static/media/circuit-booking.e9f093ac.png",
@@ -45,7 +45,7 @@
     "static/js/runtime-main.b9183603.js",
     "static/css/2.ac1ab58b.chunk.css",
     "static/js/2.d3844477.chunk.js",
-    "static/css/main.b908ee2d.chunk.css",
+    "static/css/main.06e0806c.chunk.css",
     "static/js/main.9397b4e4.chunk.js"
   ]
 }

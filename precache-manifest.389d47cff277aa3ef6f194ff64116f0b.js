@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "85c60f299b8854ee8720884c5635fffa",
+    "revision": "93f45eb0c951a974888a3876b3f6470e",
     "url": "/efezino/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/efezino/static/css/2.ac1ab58b.chunk.css"
   },
   {
-    "revision": "601dc6c5f32a6b33bb12",
-    "url": "/efezino/static/css/main.b908ee2d.chunk.css"
+    "revision": "06d301757cdce0d67112",
+    "url": "/efezino/static/css/main.06e0806c.chunk.css"
   },
   {
     "revision": "09cce534c42daed62339",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/efezino/static/js/2.d3844477.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "601dc6c5f32a6b33bb12",
+    "revision": "06d301757cdce0d67112",
     "url": "/efezino/static/js/main.9397b4e4.chunk.js"
   },
   {
