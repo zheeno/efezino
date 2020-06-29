@@ -2,6 +2,7 @@
   "name": "efezino",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://zheeno.github.io/efezino",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -10,8 +11,10 @@
     "gh-pages": "^3.1.0",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.1",
+    "react-card-carousel": "^1.1.3",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
+    "react-vertical-timeline-component": "^3.0.2",
     "reactstrap": "^8.5.1"
   },
   "scripts": {

@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './assets/styles/App.css';
 import { Container, Row, Col } from 'reactstrap';
+import avatar1 from "./assets/img/avatars/myAvatar_1.png";
+import avatar2 from "./assets/img/avatars/myAvatar_2.png";
+import avatar3 from "./assets/img/avatars/myAvatar_3.png";
 import avatar4 from "./assets/img/avatars/myAvatar_4.png";
 import laravelIcon from "./assets/img/icons/laravel.png";
 import reactIcon from "./assets/img/icons/react.png";
@@ -14,6 +17,13 @@ import ionicIcon from "./assets/img/icons/ionic.png";
 import gitIcon from "./assets/img/icons/git.png";
 import firebaseIcon from "./assets/img/icons/firebase.png";
 import dockerIcon from "./assets/img/icons/docker.png";
+import cssIcon from "./assets/img/icons/css.png";
+import facebookIcon from "./assets/img/icons/facebook.png";
+import twitterIcon from "./assets/img/icons/twitter.png";
+import linkedinIcon from "./assets/img/icons/linkedin.png";
+import instagramIcon from "./assets/img/icons/instagram.png";
+import WorkHistory from './components/WorkHistory';
+import FeaturedProjects from './components/FeaturedProjects';
 
 class App extends Component {
   constructor(props) {
@@ -23,7 +33,7 @@ class App extends Component {
         {
           name: "Laravel",
           icon: laravelIcon,
-          desc: "I fell in love with laravel as at 2017"
+          desc: ""
         },
         {
           name: "React",
@@ -63,6 +73,11 @@ class App extends Component {
         {
           name: "Git Version Control",
           icon: gitIcon,
+          desc: ""
+        },
+        {
+          name: "CSS",
+          icon: cssIcon,
           desc: ""
         },
         {
@@ -109,6 +124,34 @@ class App extends Component {
             proactively and sees problems as a motivation and strives to find lasting solutions.
           </div>
         </section>
+        <section className="bg-dark-pattern-1 pt-5">
+          <WorkHistory />
+        </section>
+        <section className="py-5 align-center hidden-sm">
+          <img src={avatar1} className="avatar-image mt-3 mr-n3" style={{ width: 80, height: 80 }} />
+          <img src={avatar3} className="avatar-image" style={{ zIndex: 3 }} />
+          <img src={avatar2} className="avatar-image mt-3 ml-n3" style={{ width: 80, height: 80 }} />
+          <h3 className="white-text font-weight-bold my-4">Here are some of my projects</h3>
+          <FeaturedProjects />
+        </section>
+        <footer className="p-2 p-md-4 bg-grey-deep">
+          <Row>
+            <Col md={3} className="mx-auto align-center">
+              <a href="https://facebook.com/ukpowe" target="_blank"><img className="icon-image" src={facebookIcon} /></a>
+              <a href="https://instagram.com/zheeno_rocks" target="_blank"><img className="icon-image" src={instagramIcon} /></a>
+              <a href="https://twitter.com/zheeno_rocks" target="_blank"><img className="icon-image" src={twitterIcon} /></a>
+              <a href="https://linkedin.com/in/efezino-ukpowe" target="_blank"><img className="icon-image" src={linkedinIcon} /></a>
+            </Col>
+          </Row>
+          <Row>
+            <Col md={6} className="mx-auto align-center py-md-4">
+              <p className="white-text">Feel free to put a call through or send me a mail</p>
+              <p className="m-0 white-text font-weight-bold">+234-814 775 7475</p>
+              <p className="m-0 white-text font-weight-bold">+234-814 775 7475</p>
+              <p className="m-0 white-text font-weight-bold">efezinoukpowe@gmail.com</p>
+            </Col>
+          </Row>
+        </footer>
       </div>
     );
   }
