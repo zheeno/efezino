@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c613cbb1f38f9605ce872731d767366f",
+    "revision": "4202c972e13f477ab04d52612c53d9d5",
     "url": "/efezino/index.html"
   },
   {
-    "revision": "75bf8a6446046040c201",
+    "revision": "cecff2444862bdc620fa",
     "url": "/efezino/static/css/2.ac1ab58b.chunk.css"
   },
   {
-    "revision": "cd1ba4bba3f50033f9af",
+    "revision": "9d2269adcf20767ef870",
     "url": "/efezino/static/css/main.06e0806c.chunk.css"
   },
   {
-    "revision": "75bf8a6446046040c201",
-    "url": "/efezino/static/js/2.773b896a.chunk.js"
+    "revision": "cecff2444862bdc620fa",
+    "url": "/efezino/static/js/2.171fff98.chunk.js"
   },
   {
     "revision": "5ac48c47bb3912b14c2d8de4f56d5ae8",
-    "url": "/efezino/static/js/2.773b896a.chunk.js.LICENSE.txt"
+    "url": "/efezino/static/js/2.171fff98.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "cd1ba4bba3f50033f9af",
-    "url": "/efezino/static/js/main.eb2c25bc.chunk.js"
+    "revision": "9d2269adcf20767ef870",
+    "url": "/efezino/static/js/main.21327549.chunk.js"
   },
   {
     "revision": "00057c28ec44d3858e02",
@@ -30,6 +30,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "330311b475d9a46ac1088f39c9733ced",
     "url": "/efezino/static/media/angular.330311b4.png"
+  },
+  {
+    "revision": "87f854930f4cb0b7a2a4a41d45f65291",
+    "url": "/efezino/static/media/cecelia.87f85493.png"
   },
   {
     "revision": "e9f093acdfd86c376e277fb002661f43",

@@ -1,20 +1,21 @@
 {
   "files": {
     "main.css": "/efezino/static/css/main.06e0806c.chunk.css",
-    "main.js": "/efezino/static/js/main.eb2c25bc.chunk.js",
-    "main.js.map": "/efezino/static/js/main.eb2c25bc.chunk.js.map",
+    "main.js": "/efezino/static/js/main.21327549.chunk.js",
+    "main.js.map": "/efezino/static/js/main.21327549.chunk.js.map",
     "runtime-main.js": "/efezino/static/js/runtime-main.b9183603.js",
     "runtime-main.js.map": "/efezino/static/js/runtime-main.b9183603.js.map",
     "static/css/2.ac1ab58b.chunk.css": "/efezino/static/css/2.ac1ab58b.chunk.css",
-    "static/js/2.773b896a.chunk.js": "/efezino/static/js/2.773b896a.chunk.js",
-    "static/js/2.773b896a.chunk.js.map": "/efezino/static/js/2.773b896a.chunk.js.map",
+    "static/js/2.171fff98.chunk.js": "/efezino/static/js/2.171fff98.chunk.js",
+    "static/js/2.171fff98.chunk.js.map": "/efezino/static/js/2.171fff98.chunk.js.map",
     "index.html": "/efezino/index.html",
-    "precache-manifest.1ea10901e6be011afb8ebf88546e15b1.js": "/efezino/precache-manifest.1ea10901e6be011afb8ebf88546e15b1.js",
+    "precache-manifest.7b28d23cbf9f6181054391fe5aea93f1.js": "/efezino/precache-manifest.7b28d23cbf9f6181054391fe5aea93f1.js",
     "service-worker.js": "/efezino/service-worker.js",
     "static/css/2.ac1ab58b.chunk.css.map": "/efezino/static/css/2.ac1ab58b.chunk.css.map",
     "static/css/main.06e0806c.chunk.css.map": "/efezino/static/css/main.06e0806c.chunk.css.map",
-    "static/js/2.773b896a.chunk.js.LICENSE.txt": "/efezino/static/js/2.773b896a.chunk.js.LICENSE.txt",
+    "static/js/2.171fff98.chunk.js.LICENSE.txt": "/efezino/static/js/2.171fff98.chunk.js.LICENSE.txt",
     "static/media/angular.png": "/efezino/static/media/angular.330311b4.png",
+    "static/media/cecelia.png": "/efezino/static/media/cecelia.87f85493.png",
     "static/media/circuit-booking.png": "/efezino/static/media/circuit-booking.e9f093ac.png",
     "static/media/css.png": "/efezino/static/media/css.75e4d6d5.png",
     "static/media/facebook.png": "/efezino/static/media/facebook.9d07141d.png",
@@ -44,8 +45,8 @@
   "entrypoints": [
     "static/js/runtime-main.b9183603.js",
     "static/css/2.ac1ab58b.chunk.css",
-    "static/js/2.773b896a.chunk.js",
+    "static/js/2.171fff98.chunk.js",
     "static/css/main.06e0806c.chunk.css",
-    "static/js/main.eb2c25bc.chunk.js"
+    "static/js/main.21327549.chunk.js"
   ]
 }
