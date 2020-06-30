@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/efezino/precache-manifest.389d47cff277aa3ef6f194ff64116f0b.js"
+  "/efezino/precache-manifest.1ea10901e6be011afb8ebf88546e15b1.js"
 );
 
 self.addEventListener('message', (event) => {
