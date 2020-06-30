@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.1092f9e3.chunk.css",
-    "main.js": "/static/js/main.3ceb56a7.chunk.js",
-    "main.js.map": "/static/js/main.3ceb56a7.chunk.js.map",
+    "main.css": "/static/css/main.1e5bb49a.chunk.css",
+    "main.js": "/static/js/main.05d3955f.chunk.js",
+    "main.js.map": "/static/js/main.05d3955f.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.b80d209c.js",
     "runtime-main.js.map": "/static/js/runtime-main.b80d209c.js.map",
     "static/css/2.ac1ab58b.chunk.css": "/static/css/2.ac1ab58b.chunk.css",
-    "static/js/2.171fff98.chunk.js": "/static/js/2.171fff98.chunk.js",
-    "static/js/2.171fff98.chunk.js.map": "/static/js/2.171fff98.chunk.js.map",
+    "static/js/2.fe969e4c.chunk.js": "/static/js/2.fe969e4c.chunk.js",
+    "static/js/2.fe969e4c.chunk.js.map": "/static/js/2.fe969e4c.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.9c117019bde38007ddf0c62ec8297b57.js": "/precache-manifest.9c117019bde38007ddf0c62ec8297b57.js",
+    "precache-manifest.584d7c01c21b9823e0396533771326a8.js": "/precache-manifest.584d7c01c21b9823e0396533771326a8.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.ac1ab58b.chunk.css.map": "/static/css/2.ac1ab58b.chunk.css.map",
-    "static/css/main.1092f9e3.chunk.css.map": "/static/css/main.1092f9e3.chunk.css.map",
-    "static/js/2.171fff98.chunk.js.LICENSE.txt": "/static/js/2.171fff98.chunk.js.LICENSE.txt",
+    "static/css/main.1e5bb49a.chunk.css.map": "/static/css/main.1e5bb49a.chunk.css.map",
+    "static/js/2.fe969e4c.chunk.js.LICENSE.txt": "/static/js/2.fe969e4c.chunk.js.LICENSE.txt",
     "static/media/angular.png": "/static/media/angular.330311b4.png",
     "static/media/cecelia.png": "/static/media/cecelia.87f85493.png",
     "static/media/circuit-booking.png": "/static/media/circuit-booking.e9f093ac.png",
     "static/media/css.png": "/static/media/css.75e4d6d5.png",
+    "static/media/efezino.png": "/static/media/efezino.18a8da0d.png",
     "static/media/facebook.png": "/static/media/facebook.9d07141d.png",
     "static/media/fastklinik.png": "/static/media/fastklinik.7955e897.png",
     "static/media/firebase.png": "/static/media/firebase.a6c26916.png",
@@ -45,8 +46,8 @@
   "entrypoints": [
     "static/js/runtime-main.b80d209c.js",
     "static/css/2.ac1ab58b.chunk.css",
-    "static/js/2.171fff98.chunk.js",
-    "static/css/main.1092f9e3.chunk.css",
-    "static/js/main.3ceb56a7.chunk.js"
+    "static/js/2.fe969e4c.chunk.js",
+    "static/css/main.1e5bb49a.chunk.css",
+    "static/js/main.05d3955f.chunk.js"
   ]
 }
