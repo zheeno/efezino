@@ -41,7 +41,7 @@ class App extends Component {
         {
           name: "React JS & Native",
           icon: reactIcon,
-          desc: "My love for react and how it makes a programmer's life easier can never be over emphasized."
+          desc: "My love for react and how it makes a programmer's life a whole lot easier when building web and mobile apps can never be over emphasized."
         },
         {
           name: "Java",
@@ -51,17 +51,17 @@ class App extends Component {
         {
           name: "Node JS",
           icon: jsIcon,
-          desc: "This is one runtime environment that I'm fascinated by, it rise in the programming sphere was jaw-dropping, and now it's taking over, if you ask me."
+          desc: "This is one runtime environment that I'm fascinated by, its rise in the programming sphere was jaw-dropping, and now it's taking over, if you ask me."
         },
         {
           name: "Android",
           icon: androidIcon,
-          desc: "Building native android applications has always been on my todo list. Imagine my excietment when I built my first native android app. -I smiled all day my lips were almost touching my ears."
+          desc: "Building native Android applications has always been on my todo list. Imagine my excietment when I built my first native Android app. -I smiled all day my lips were almost touching my ears. :)"
         },
         {
           name: "HTML 5",
           icon: htmlIcon,
-          desc: "I remember the very first webpage I built back then... It wasn't as pretty but I was so proud of myself, I showed it to every one of my course mate in class."
+          desc: "I remember the very first webpage I built back then... It wasn't as pretty but I was so proud of myself, I showed it to every one of my course mates in class."
         },
         {
           name: "Angular",
@@ -91,7 +91,7 @@ class App extends Component {
         {
           name: "Docker",
           icon: dockerIcon,
-          desc: "Using Docker has given me a new perspective and insight into deploying applications"
+          desc: "Using Docker has given me a whole new perspective and insight into deploying applications"
         }
       ]
     }
@@ -109,10 +109,13 @@ class App extends Component {
     new Typewriter('#typewriter', {
       strings: stack.desc,
       autoStart: true,
-    }).callFunction(() => {
-      if (this.state.activeIcon > this.state.stacks.length) return;
-      this.setState({ activeIcon: index + 1 }, () => this.loopIcons())
-    });
+    })
+      .deleteAll()
+      .pauseFor(1500)
+      .callFunction(() => {
+        if (this.state.activeIcon > this.state.stacks.length) return;
+        this.setState({ activeIcon: index + 1 }, () => this.loopIcons())
+      });
   }
 
   render() {
@@ -124,15 +127,15 @@ class App extends Component {
               <Row className="overlay m-0">
                 <Col md={5} className="h-100 p-5 justify-center" style={{ flexDirection: "column" }}>
                   <div>
-                    <h3 className="white-text font-weight-light mb-0">Hi,<br />I am Efezino</h3>
+                    <h3 className="white-text font-weight-light mb-0">Hi, I am<br />Efezino Ukpowe</h3>
                   </div>
                   <div className="py-2">
                     <p className="white-text fa-2x">and I&apos;m a full stack developer</p>
-                    {this.state.stacks.map((stack, index) => (<img key={index} src={stack.icon} title={stack.name} alt={`${stack.name} icon`} className={`icon-image ${this.state.activeIcon == index && 'animated bounce infinite'}`} />))}
+                    {this.state.stacks.map((stack, index) => (<img onClick={() => this.setState({ activeIcon: index }, () => this.loopIcons())} key={index} src={stack.icon} title={stack.name} alt={`${stack.name} icon`} className={`clickable icon-image ${this.state.activeIcon == index && 'animated bounce infinite'}`} />))}
                   </div>
                 </Col>
                 <Col md={7} style={{ height: '100%' }} className="p-md-5 aligner-container">
-                  <Card style={{ background: `rgba(66, 66, 66, 0.31)`, color: '#fff', width: '100%' }}>
+                  <Card style={{ background: `rgba(66, 66, 66, 0.31)`, color: '#fff', width: '100%', minHeight: '300px' }}>
                     <CardBody>
                       <CardHeader className="shadow-none border-0 fa-2x">
                         {this.state.activeIcon < this.state.stacks.length &&
@@ -183,8 +186,8 @@ class App extends Component {
             <Col md={6} className="mx-auto align-center py-md-4">
               <p className="white-text">Feel free to put a call through or send me a mail</p>
               <p className="m-0 white-text font-weight-bold">+234-814 775 7475</p>
-              <p className="m-0 white-text font-weight-bold">+234-814 775 7475</p>
-              <p className="m-0 white-text font-weight-bold">efezinoukpowe@gmail.com</p>
+              <p className="m-0 white-text font-weight-bold">+234-817 914 4067</p>
+              <p className="m-0 white-text font-weight-bold">iam@efezino.com</p>
             </Col>
           </Row>
         </footer>

@@ -6,6 +6,8 @@ import scorenshare from "../assets/img/projects/scorenshare.png"
 import sniffer from "../assets/img/projects/sniffer.png"
 import terminal from "../assets/img/projects/terminal.png"
 import fastklinik from "../assets/img/projects/fastklinik.png"
+import cecelia from "../assets/img/projects/cecelia.png"
+import efezino from "../assets/img/projects/efezino.png"
 
 const FeaturedProjects = (props) => {
     const [projects] = useState([
@@ -33,12 +35,22 @@ const FeaturedProjects = (props) => {
             title: "Fastklinik",
             photoUrl: fastklinik,
             link: "https://fastklinik-frontend.herokuapp.com/"
+        },
+        {
+            title: "Cecelia",
+            photoUrl: cecelia,
+            link: "https://cecelia.com.ng"
+        },
+        {
+            title: "My Bio Web Page",
+            photoUrl: efezino,
+            link: "https://efezino.com"
         }
     ])
 
     return (
         <div style={{ position: "relative", marginTop: 160 }}>
-            <ReactCardCarousel autoplay={true} autoplay_speed={3000} spread={"wide"}
+            <ReactCardCarousel autoplay={true} autoplay_speed={5000} spread={"wide"}
             >
                 {projects.map((project, index) => (
                     <div key={index} className="carousel-card">
