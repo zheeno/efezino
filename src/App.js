@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './assets/styles/App.css';
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Row, Col, Card, CardBody, CardHeader } from 'reactstrap';
 import avatar1 from "./assets/img/avatars/myAvatar_1.png";
 import avatar2 from "./assets/img/avatars/myAvatar_2.png";
 import avatar3 from "./assets/img/avatars/myAvatar_3.png";
@@ -24,74 +24,95 @@ import linkedinIcon from "./assets/img/icons/linkedin.png";
 import instagramIcon from "./assets/img/icons/instagram.png";
 import WorkHistory from './components/WorkHistory';
 import FeaturedProjects from './components/FeaturedProjects';
+import Typewriter from 'typewriter-effect/dist/core';
+
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      activeIcon: 0,
       stacks: [
         {
           name: "Laravel",
           icon: laravelIcon,
-          desc: ""
+          desc: "I fell in love with Laravel in 2018 and since then, I've applied my knowledge of this awesome framework to building an awesome collection of APIs and web apps."
         },
         {
-          name: "React",
+          name: "React JS & Native",
           icon: reactIcon,
-          desc: ""
+          desc: "My love for react and how it makes a programmer's life easier can never be over emphasized."
         },
         {
           name: "Java",
           icon: javaIcon,
-          desc: ""
+          desc: "I've learned a lot working on a good number of JAVA projects including servelets."
         },
         {
-          name: "Javascript",
+          name: "Node JS",
           icon: jsIcon,
-          desc: ""
+          desc: "This is one runtime environment that I'm fascinated by, it rise in the programming sphere was jaw-dropping, and now it's taking over, if you ask me."
         },
         {
           name: "Android",
           icon: androidIcon,
-          desc: ""
+          desc: "Building native android applications has always been on my todo list. Imagine my excietment when I built my first native android app. -I smiled all day my lips were almost touching my ears."
         },
         {
           name: "HTML 5",
           icon: htmlIcon,
-          desc: ""
+          desc: "I remember the very first webpage I built back then... It wasn't as pretty but I was so proud of myself, I showed it to every one of my course mate in class."
         },
         {
           name: "Angular",
           icon: angularIcon,
-          desc: ""
+          desc: "The concept of SPAs, two-way data binding, dependency injection was highly appreciated when I learned Angular."
         },
         {
           name: "Ionic",
           icon: ionicIcon,
-          desc: ""
+          desc: "I got introduced to Ionic through a friend and I wasn't disappointed. I was intrigued by the fact that I was able to build cross-platform apps with my knowledge of web development."
         },
         {
           name: "Git Version Control",
           icon: gitIcon,
-          desc: ""
+          desc: "During the early stages of my career, Version control seemed like a daunting concept, but after taking a course on it, it has since then become a part of me."
         },
         {
           name: "CSS",
           icon: cssIcon,
-          desc: ""
+          desc: "I am all about the UI/UX of an app, and that would be incomplete without CSS. My exposure to it has drastically changed the entire look of my apps."
         },
         {
           name: "Firebase",
           icon: firebaseIcon,
-          desc: ""
+          desc: "This is one cloud service that I love so much, mostly because of their ease-of-use, efficiency and seamless integration."
         },
         {
           name: "Docker",
           icon: dockerIcon,
-          desc: ""
+          desc: "Using Docker has given me a new perspective and insight into deploying applications"
         }
       ]
     }
+  }
+
+  componentDidMount() {
+    this.loopIcons();
+  }
+
+  loopIcons() {
+    const index = this.state.activeIcon;
+    this.setState({ activeIcon: index })
+    let stack = this.state.stacks[index];
+    if (!stack) return;
+    new Typewriter('#typewriter', {
+      strings: stack.desc,
+      autoStart: true,
+    }).callFunction(() => {
+      if (this.state.activeIcon > this.state.stacks.length) return;
+      this.setState({ activeIcon: index + 1 }, () => this.loopIcons())
+    });
   }
 
   render() {
@@ -107,8 +128,23 @@ class App extends Component {
                   </div>
                   <div className="py-2">
                     <p className="white-text fa-2x">and I&apos;m a full stack developer</p>
-                    {this.state.stacks.map((stack, index) => (<img key={index} src={stack.icon} title={stack.name} alt={`${stack.name} icon`} className="icon-image" />))}
+                    {this.state.stacks.map((stack, index) => (<img key={index} src={stack.icon} title={stack.name} alt={`${stack.name} icon`} className={`icon-image ${this.state.activeIcon == index && 'animated bounce infinite'}`} />))}
                   </div>
+                </Col>
+                <Col md={7} style={{ height: '100%' }} className="p-md-5 aligner-container">
+                  <Card style={{ background: `rgba(66, 66, 66, 0.31)`, color: '#fff', width: '100%' }}>
+                    <CardBody>
+                      <CardHeader className="shadow-none border-0 fa-2x">
+                        {this.state.activeIcon < this.state.stacks.length &&
+                          <>
+                            <img src={this.state.stacks[this.state.activeIcon].icon} className={`icon-image`} />
+                            <span>{this.state.stacks[this.state.activeIcon].name}</span>
+                          </>
+                        }
+                      </CardHeader>
+                      <span id="typewriter" style={{ fontSize: 30 }}></span>
+                    </CardBody>
+                  </Card>
                 </Col>
               </Row>
             </Col>
