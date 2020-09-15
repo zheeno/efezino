@@ -76,7 +76,6 @@ const FeaturedProjects = (props) => {
             >
                 {projects.map((project, index) => (
                     <div key={index} className="carousel-card">
-                        {/* <a href={project.link} target="_blank" className="btn btn-sm btn-info p-1"><span className="fa fa-angle-right" /></a> */}
                         <img className="carousel-img clickable" src={`${project.photoUrl || boilerPlate}`} />
                     </div>
                 ))}
