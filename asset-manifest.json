@@ -1,26 +1,28 @@
 {
   "files": {
     "main.css": "/static/css/main.6996f666.chunk.css",
-    "main.js": "/static/js/main.fed69e84.chunk.js",
-    "main.js.map": "/static/js/main.fed69e84.chunk.js.map",
+    "main.js": "/static/js/main.eeee38ca.chunk.js",
+    "main.js.map": "/static/js/main.eeee38ca.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.b80d209c.js",
     "runtime-main.js.map": "/static/js/runtime-main.b80d209c.js.map",
     "static/css/2.ac1ab58b.chunk.css": "/static/css/2.ac1ab58b.chunk.css",
-    "static/js/2.fe969e4c.chunk.js": "/static/js/2.fe969e4c.chunk.js",
-    "static/js/2.fe969e4c.chunk.js.map": "/static/js/2.fe969e4c.chunk.js.map",
+    "static/js/2.a578a830.chunk.js": "/static/js/2.a578a830.chunk.js",
+    "static/js/2.a578a830.chunk.js.map": "/static/js/2.a578a830.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.b6e9ab1b8fda85aa6eee7534d9760267.js": "/precache-manifest.b6e9ab1b8fda85aa6eee7534d9760267.js",
+    "precache-manifest.d83b046ffdb52ba951e886641e22c2f2.js": "/precache-manifest.d83b046ffdb52ba951e886641e22c2f2.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.ac1ab58b.chunk.css.map": "/static/css/2.ac1ab58b.chunk.css.map",
     "static/css/main.6996f666.chunk.css.map": "/static/css/main.6996f666.chunk.css.map",
-    "static/js/2.fe969e4c.chunk.js.LICENSE.txt": "/static/js/2.fe969e4c.chunk.js.LICENSE.txt",
+    "static/js/2.a578a830.chunk.js.LICENSE.txt": "/static/js/2.a578a830.chunk.js.LICENSE.txt",
     "static/media/angular.png": "/static/media/angular.330311b4.png",
     "static/media/cecelia.png": "/static/media/cecelia.87f85493.png",
     "static/media/circuit-booking.png": "/static/media/circuit-booking.e9f093ac.png",
     "static/media/css.png": "/static/media/css.75e4d6d5.png",
+    "static/media/dispatch_z.jpg": "/static/media/dispatch_z.c3e9ad28.jpg",
     "static/media/efezino.png": "/static/media/efezino.18a8da0d.png",
     "static/media/facebook.png": "/static/media/facebook.9d07141d.png",
     "static/media/fastklinik.png": "/static/media/fastklinik.7955e897.png",
+    "static/media/fastklinik_web.png": "/static/media/fastklinik_web.0c4055a9.png",
     "static/media/firebase.png": "/static/media/firebase.a6c26916.png",
     "static/media/git.png": "/static/media/git.8fa18eb5.png",
     "static/media/google-materialdesign.png": "/static/media/google-materialdesign.a5513540.png",
@@ -46,8 +48,8 @@
   "entrypoints": [
     "static/js/runtime-main.b80d209c.js",
     "static/css/2.ac1ab58b.chunk.css",
-    "static/js/2.fe969e4c.chunk.js",
+    "static/js/2.a578a830.chunk.js",
     "static/css/main.6996f666.chunk.css",
-    "static/js/main.fed69e84.chunk.js"
+    "static/js/main.eeee38ca.chunk.js"
   ]
 }

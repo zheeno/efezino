@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8ff52dc717330bf9480280f75df73138",
+    "revision": "a04c821420eb413b8c3e50afa8c77c7c",
     "url": "/index.html"
   },
   {
-    "revision": "441e1845b1b1d0a5bf47",
+    "revision": "b5c5c1025ab33762d82b",
     "url": "/static/css/2.ac1ab58b.chunk.css"
   },
   {
-    "revision": "88f8233b8602fcd0c0ab",
+    "revision": "46a3c15b23e5e345a153",
     "url": "/static/css/main.6996f666.chunk.css"
   },
   {
-    "revision": "441e1845b1b1d0a5bf47",
-    "url": "/static/js/2.fe969e4c.chunk.js"
+    "revision": "b5c5c1025ab33762d82b",
+    "url": "/static/js/2.a578a830.chunk.js"
   },
   {
     "revision": "5ac48c47bb3912b14c2d8de4f56d5ae8",
-    "url": "/static/js/2.fe969e4c.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.a578a830.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "88f8233b8602fcd0c0ab",
-    "url": "/static/js/main.fed69e84.chunk.js"
+    "revision": "46a3c15b23e5e345a153",
+    "url": "/static/js/main.eeee38ca.chunk.js"
   },
   {
     "revision": "d07b61d34f0d8a021b56",
@@ -44,6 +44,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/css.75e4d6d5.png"
   },
   {
+    "revision": "c3e9ad28110658d24f6338c8daa5ebaf",
+    "url": "/static/media/dispatch_z.c3e9ad28.jpg"
+  },
+  {
     "revision": "18a8da0d623d9bcba5befeccdb681924",
     "url": "/static/media/efezino.18a8da0d.png"
   },
@@ -54,6 +58,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "7955e8973695d31ebee4f72936ccefe6",
     "url": "/static/media/fastklinik.7955e897.png"
+  },
+  {
+    "revision": "0c4055a91774d8cc8f39263e76a1c8c3",
+    "url": "/static/media/fastklinik_web.0c4055a9.png"
   },
   {
     "revision": "a6c26916c900bfa596ff3c52dfa11db0",
