@@ -191,7 +191,7 @@ class App extends Component {
             </Col>
           </Row>
         </footer>
-      </div>
+      </div >
     );
   }
 }
