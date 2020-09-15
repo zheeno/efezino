@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './assets/styles/App.css';
-import { Container, Row, Col, Card, CardBody, CardHeader } from 'reactstrap';
+import { Container, Row, Col, Card, CardBody, CardHeader, Button } from 'reactstrap';
 import avatar1 from "./assets/img/avatars/myAvatar_1.png";
 import avatar2 from "./assets/img/avatars/myAvatar_2.png";
 import avatar3 from "./assets/img/avatars/myAvatar_3.png";
@@ -171,7 +171,14 @@ class App extends Component {
           <img src={avatar3} className="avatar-image" style={{ zIndex: 3 }} />
           <img src={avatar2} className="avatar-image mt-3 ml-n3" style={{ width: 80, height: 80 }} />
           <h3 className="white-text font-weight-bold my-4">Here are some of my projects</h3>
-          <FeaturedProjects />
+          <FeaturedProjects
+            setCurrentProject={(project) => this.setState({ currentProject: project })}
+          />
+          {this.state.currentProject &&
+            <div className="w-100" style={{ position: "absolute", marginTop: 160 }}>
+              <a className="btn btn-grey btn-sm" href={this.state.currentProject.link} target="_blank">{this.state.currentProject.title}</a>
+            </div>
+          }
         </section>
         <footer className="p-2 p-md-4 bg-grey-deep">
           <Row>
