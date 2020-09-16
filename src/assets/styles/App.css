@@ -1,3 +1,6 @@
+body {
+  /* font-family: "Courier New", Courier, monospace; */
+}
 .hero {
   min-height: 100vh;
   width: 100vw;
@@ -63,6 +66,18 @@
   background-color: #8a0c2c;
 }
 
+.bg-maroon {
+  background-color: #91122a;
+}
+
+.bg-sky {
+  background-color: #1e88e5;
+}
+
+.info-text {
+  color: #3791e0;
+}
+
 .bg-grey-deep {
   background-color: rgba(2, 1, 1, 0.22);
 }
@@ -88,11 +103,31 @@
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 
+.vertical-timeline-element-date {
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 1rem !important;
+  background-color: #3791e0;
+  min-width: 200px;
+  max-width: 200px;
+  text-align: center !important;
+}
+
 .bg-dark-pattern-1 {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-image: url("https://www.setaswall.com/wp-content/uploads/2017/03/Lines-Dark-Background-Wallpaper-2560x1600.jpg");
+  background-position: center;
+  background-image: url("https://wallpapercave.com/wp/wp1828954.jpg");
+}
+
+.bg-dark-pattern-2 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: relative;
+  background-position: center;
+  background-image: url("../img/1102001.jpg");
 }
 
 .carousel-card {
@@ -125,6 +160,29 @@
 footer {
   top: 200px;
   position: relative;
+}
+
+.nav-item {
+  border-right: 1px solid #1f1d1d;
+  margin-right: 10px;
+}
+
+.nav-item .nav-link {
+  color: #fff !important;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.nav-item:hover {
+  background-color: #3791e0 !important;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#tsparticles {
+  position: absolute;
+  width: 100vw;
 }
 
 @media screen and (max-width: 576px) {

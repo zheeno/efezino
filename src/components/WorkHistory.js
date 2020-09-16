@@ -52,13 +52,13 @@ const WorkHistory = (props) => {
     ])
     return (
         <>
-            <h3 className="white-text align-center font-weight-bold">My Work History</h3>
+            <h3 className="white-text align-center font-weight-bold">My Career Timeline</h3>
             <VerticalTimeline>
                 {history.map((job, index) => (
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
-                        contentStyle={{ background: `rgba(66, 66, 66, 0.31)`, color: '#fff' }}
-                        contentArrowStyle={{ borderRight: `7px solid rgba(66, 66, 66, 0.31)` }}
+                        contentStyle={{ background: `rgba(35, 34,34,0.58)`, color: '#fff' }}
+                        contentArrowStyle={{ borderRight: `7px solid rgba(35, 34,34,0.58)` }}
                         date={job.duration}
                         iconStyle={{ background: `rgb(29, 28, 28)`, color: '#fff' }}
                     >

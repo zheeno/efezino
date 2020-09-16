@@ -18,46 +18,64 @@ const FeaturedProjects = (props) => {
         {
             title: "Circuit Booking",
             photoUrl: circuitBooking,
+            logo: require('../assets/img/projects/logos/CircuitbookingLogo.png'),
+            logoStyle: { width: 250, backgroundColor: '#FFF', padding: 10, borderRadius: 10 },
             link: "https://circuit-booking.com"
         },
         {
             title: "Score N Share",
+            logo: require('../assets/img/projects/logos/score_n_share_logo.png'),
+            logoStyle: { width: 250 },
             photoUrl: scorenshare,
             link: "https://scorenshare.com"
         },
         {
             title: "Covid-19 Sniffer",
             photoUrl: sniffer,
+            logo: require('../assets/img/projects/logos/covid_19_logo.png'),
+            logoStyle: { width: 80 },
             link: "https://covid19sniffer.com"
         },
         {
             title: "Terminal Manager",
             photoUrl: terminal,
+            logo: require('../assets/img/projects/logos/web.png'),
+            logoStyle: { width: 80 },
             link: "https://terminal.efulltech.com.ng"
         },
         {
             title: "Fastklinik HMS",
             photoUrl: fastklinik,
+            logo: require('../assets/img/projects/logos/fastklinik_white.png'),
+            logoStyle: { width: 150 },
             link: "https://fastklinik-v1.herokuapp.com/"
         },
         {
             title: "Cecelia",
             photoUrl: cecelia,
+            logo: require('../assets/img/projects/logos/cecelia-logo-black-bg.png'),
+            logoStyle: { width: 200 },
             link: "https://cecelia.com.ng"
         },
         {
             title: "My Bio Web Page",
             photoUrl: efezino,
+            logo: require('../assets/img/avatars/myAvatar_4.png'),
+            logoStyle: { width: 100, borderRadius: 100 },
             link: "https://efezino.com"
         },
         {
             title: "Fastklinik Web",
             photoUrl: fastklinikWeb,
+            logo: require('../assets/img/projects/logos/fastklinik_white.png'),
+            logoStyle: { width: 150 },
             link: "https://fastklinik-web.herokuapp.com/"
         },
         {
             title: "Dispatch-Z",
             photoUrl: dispatch_z,
+            logo: require('../assets/img/projects/logos/dispatch_z_logo.png'),
+            logoStyle: { width: 130, backgroundColor: '#B51315', padding: 10, borderRadius: 10 },
             link: "https://play.google.com/store/apps/details?id=com.dispatch_z"
         }
     ])

@@ -25,7 +25,12 @@ import instagramIcon from "./assets/img/icons/instagram.png";
 import WorkHistory from './components/WorkHistory';
 import FeaturedProjects from './components/FeaturedProjects';
 import Typewriter from 'typewriter-effect/dist/core';
+import { AiOutlineArrowRight } from "react-icons/ai";
+import Navbar from './components/Navbar';
+import Particles from 'react-particles-js';
+import * as Scroll from 'react-scroll';
 
+var { Link, Element, Events, scrollSpy } = Scroll
 
 class App extends Component {
   constructor(props) {
@@ -99,6 +104,19 @@ class App extends Component {
 
   componentDidMount() {
     this.loopIcons();
+    Events.scrollEvent.register('begin', function (to, element) {
+      console.log('begin', arguments);
+    });
+
+    Events.scrollEvent.register('end', function (to, element) {
+      console.log('end', arguments);
+    });
+    scrollSpy.update();
+  }
+
+  componentWillUnmount() {
+    Events.scrollEvent.remove('begin');
+    Events.scrollEvent.remove('end');
   }
 
   loopIcons() {
@@ -120,84 +138,116 @@ class App extends Component {
 
   render() {
     return (
-      <div className="m-0">
-        <section>
-          <Row>
-            <Col md={12} className="hero m-0 p-0">
-              <Row className="overlay m-0">
-                <Col md={5} className="h-100 p-5 justify-center" style={{ flexDirection: "column" }}>
-                  <div>
-                    <h3 className="white-text font-weight-light mb-0">Hi, I am<br />Efezino Ukpowe</h3>
-                  </div>
-                  <div className="py-2">
-                    <p className="white-text fa-2x">and I&apos;m a full stack developer</p>
-                    {this.state.stacks.map((stack, index) => (<img onClick={() => this.setState({ activeIcon: index }, () => this.loopIcons())} key={index} src={stack.icon} title={stack.name} alt={`${stack.name} icon`} className={`clickable icon-image ${this.state.activeIcon == index && 'animated bounce infinite'}`} />))}
-                  </div>
-                </Col>
-                <Col md={7} style={{ height: '100%' }} className="p-md-5 aligner-container">
-                  <Card style={{ background: `rgba(66, 66, 66, 0.31)`, color: '#fff', width: '100%', minHeight: '300px' }}>
-                    <CardBody>
-                      <CardHeader className="shadow-none border-0 fa-2x">
-                        {this.state.activeIcon < this.state.stacks.length &&
-                          <>
-                            <img src={this.state.stacks[this.state.activeIcon].icon} className={`icon-image`} />
-                            <span>{this.state.stacks[this.state.activeIcon].name}</span>
-                          </>
-                        }
-                      </CardHeader>
-                      <span id="typewriter" style={{ fontSize: 30 }}></span>
-                    </CardBody>
-                  </Card>
-                </Col>
-              </Row>
-            </Col>
-          </Row>
+      <div className="m-0  bg-grey-deep">
+        <Navbar />
+        <section className="mt-5">
+          <Element name="home">
+            <Row>
+              <Col md={12} className="hero m-0 p-0">
+                <Row className="overlay m-0 aligner-container">
+                  <Col md={5} className="h-100 p-5 justify-center" style={{ flexDirection: "column" }}>
+                    <div>
+                      <p className="white-text mb-0 fa-2x" style={{ fontSize: 30, fontFamily: "monospace", fontWeight: 'bold' }}>Hey, I'm Efezino</p>
+                    </div>
+                    <div className="py-2">
+                      <h4 className="white-ic font-weight-bold" style={{ fontSize: 55 }}>Full Stack<br /><span className="info-text">Developer</span></h4>
+                      {this.state.stacks.map((stack, index) => (<img onClick={() => this.setState({ activeIcon: index }, () => this.loopIcons())} key={index} src={stack.icon} title={stack.name} alt={`${stack.name} icon`} className={`clickable icon-image ${this.state.activeIcon == index && 'animated bounce infinite'}`} />))}
+                    </div>
+                  </Col>
+                  <Col md={7} style={{ height: '100%' }} className="p-md-5 aligner-container">
+                    <Card style={{ background: `rgba(66, 66, 66, 0.31)`, color: '#fff', width: '100%', minHeight: '300px' }}>
+                      <CardBody>
+                        <CardHeader className="shadow-none border-0 fa-2x">
+                          {this.state.activeIcon < this.state.stacks.length &&
+                            <>
+                              <img src={this.state.stacks[this.state.activeIcon].icon} className={`icon-image`} />
+                              <span>{this.state.stacks[this.state.activeIcon].name}</span>
+                            </>
+                          }
+                        </CardHeader>
+                        <span id="typewriter" style={{ fontSize: 30 }}></span>
+                      </CardBody>
+                    </Card>
+                  </Col>
+                </Row>
+              </Col>
+            </Row>
+          </Element>
         </section>
-        <section className="py-5 align-center">
-          <img src={avatar4} className="avatar-image" />
-          <h3 className="white-text font-weight-bold my-4">Meet Efezino</h3>
-          <div className="paragraph white-text col-md-6 mx-auto">
-            I am a confident, highly organized, and dedicated individual who has very good communication
-            skills and can easily adapt to situations, is excellent at decision making and performing tasks
-            efficiently with minimum supervision. I am a result-driven and goal-oriented person who thinks
-            proactively and sees problems as a motivation and strives to find lasting solutions.
+        <section className="py-5 align-center" style={{ backgroundColor: '#010101' }}>
+          <Element name="aboutMe">
+            <img src={avatar4} className="avatar-image" />
+            <h3 className="white-text font-weight-bold my-4">About Me</h3>
+            <div className="paragraph white-text col-md-6 mx-auto">
+              I am Efezino Ukpowe, but you can call me Zino. I am a confident, highly organized, and dedicated individual who has very good communication
+              skills and can easily adapt to situations, is excellent at decision making and performing tasks
+              efficiently with minimum supervision. I am a result-driven and goal-oriented person who thinks
+              proactively and sees problems as a motivation and strives to find lasting solutions.
           </div>
+          </Element>
         </section>
         <section className="bg-dark-pattern-1 pt-5">
-          <WorkHistory />
+          {/* <Particles
+            params={{
+              particles: {
+                line_linked: {
+                  color: '#c75b52'
+                }
+              }
+            }}
+            style={{
+              width: '100%',
+              height: '60%'
+              // backgroundImage: `url(${logo})`
+            }}
+          /> */}
+          <Element name="history">
+            <WorkHistory />
+          </Element>
         </section>
         <section className="py-5 align-center hidden-sm">
-          <img src={avatar1} className="avatar-image mt-3 mr-n3" style={{ width: 80, height: 80 }} />
-          <img src={avatar3} className="avatar-image" style={{ zIndex: 3 }} />
-          <img src={avatar2} className="avatar-image mt-3 ml-n3" style={{ width: 80, height: 80 }} />
-          <h3 className="white-text font-weight-bold my-4">Here are some of my projects</h3>
-          <FeaturedProjects
-            setCurrentProject={(project) => this.setState({ currentProject: project })}
-          />
-          {this.state.currentProject &&
-            <div className="w-100" style={{ position: "absolute", marginTop: 160 }}>
-              <a className="btn btn-grey btn-sm" href={this.state.currentProject.link} target="_blank">{this.state.currentProject.title}</a>
-            </div>
-          }
+          <Element name="projects">
+            <img src={avatar1} className="avatar-image mt-3 mr-n3" style={{ width: 80, height: 80 }} />
+            <img src={avatar3} className="avatar-image" style={{ zIndex: 3 }} />
+            <img src={avatar2} className="avatar-image mt-3 ml-n3" style={{ width: 80, height: 80 }} />
+            <h3 className="white-text font-weight-bold my-4">Here are some of my projects</h3>
+            <FeaturedProjects
+              setCurrentProject={(project) => this.setState({ currentProject: project })}
+            />
+            {this.state.currentProject &&
+              <div className="w-100" style={{ position: "absolute", marginTop: 160 }}>
+                {this.state.currentProject.logo &&
+                  <div>
+                    <img src={this.state.currentProject.logo} style={this.state.currentProject.logoStyle} />
+                  </div>
+                }
+                <a className="btn btn-grey btn-sm" href={this.state.currentProject.link} target="_blank">{this.state.currentProject.title} <AiOutlineArrowRight /></a>
+              </div>
+            }
+          </Element>
         </section>
-        <footer className="p-2 p-md-4 bg-grey-deep">
-          <Row>
-            <Col md={3} className="mx-auto align-center">
-              <a href="https://facebook.com/ukpowe" target="_blank"><img className="icon-image" src={facebookIcon} /></a>
-              <a href="https://instagram.com/zheeno_rocks" target="_blank"><img className="icon-image" src={instagramIcon} /></a>
-              <a href="https://twitter.com/zheeno_rocks" target="_blank"><img className="icon-image" src={twitterIcon} /></a>
-              <a href="https://linkedin.com/in/efezino-ukpowe" target="_blank"><img className="icon-image" src={linkedinIcon} /></a>
-            </Col>
-          </Row>
-          <Row>
-            <Col md={6} className="mx-auto align-center py-md-4">
-              <p className="white-text">Feel free to put a call through or send me a mail</p>
-              <p className="m-0 white-text font-weight-bold">+234-814 775 7475</p>
-              <p className="m-0 white-text font-weight-bold">+234-817 914 4067</p>
-              <p className="m-0 white-text font-weight-bold">iam@efezino.com</p>
-            </Col>
-          </Row>
-        </footer>
+        <section className="bg-dark-pattern-1 pt-5" style={{ height: 400 }} />
+        {/* <section className="bg-dark-pattern-2 pt-5" style={{ height: 200 }} /> */}
+        <div className="p-2 p-md-4 bg-grey-deep">
+          <Element name="contact">
+            <Row>
+              <Col md={3} className="mx-auto align-center">
+                <a href="https://facebook.com/ukpowe" target="_blank"><img className="icon-image" src={facebookIcon} /></a>
+                <a href="https://instagram.com/zheeno_rocks" target="_blank"><img className="icon-image" src={instagramIcon} /></a>
+                <a href="https://twitter.com/zheeno_rocks" target="_blank"><img className="icon-image" src={twitterIcon} /></a>
+                <a href="https://linkedin.com/in/efezino-ukpowe" target="_blank"><img className="icon-image" src={linkedinIcon} /></a>
+              </Col>
+            </Row>
+            <Row>
+              <Col md={6} className="mx-auto align-center py-md-4">
+                <p className="white-text">Feel free to put a call through or send me a mail</p>
+                <p className="m-0 white-text font-weight-bold clickable"><a href="tel:+2348147757475">+234-814 775 7475</a></p>
+                <p className="m-0 white-text font-weight-bold clickable"><a href="tel:+2348179144067">+234-817 914 4067</a></p>
+                <p className="m-0 white-text font-weight-bold clickable"><a href="mailto:efezinoukpowe@gmail.com">efezinoukpowe@gmail.com</a></p>
+              </Col>
+            </Row>
+          </Element>
+        </div>
       </div >
     );
   }
