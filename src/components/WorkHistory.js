@@ -5,11 +5,16 @@ import 'react-vertical-timeline-component/style.min.css';
 const WorkHistory = (props) => {
     const [history] = useState([
         {
+            title: "DISPATCH-ZEE LOGISTICS GLOBAL LIMITED",
+            subtitle: "CO-FOUNDER & MANAGING DIRECTOR",
+            duration: "2021 - Present",
+        },
+        {
             title: "BYOLATE TECH (NETHERLANDS)",
             subtitle: `POSITION: REMOTE SOFTWARE DEVELOPER`,
             // desc: `I worked on a couple of web applications, fixing some bugs and adding new functionalities.
             // I was tasked with building an application to perform stress testing on other web APIs`,
-            duration: "2019 - 2020",
+            duration: "2019 - Present",
         },
         {
             title: "EFULL TECHNOLOGY NIGERIA LIMITED",
@@ -25,7 +30,7 @@ const WorkHistory = (props) => {
             // this application using JAVA and also worked with the device’s SDK to target some device specific
             // functions like Using the thermal printer, Smart card reader, Camera for QR code scanning, and
             // so on.`,
-            duration: "2018 - Present",
+            duration: "2018 - 2021",
         },
         {
             title: "NATIONAL YOUTH SERVICE CORP",
